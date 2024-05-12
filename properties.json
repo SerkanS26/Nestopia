@@ -1,0 +1,431 @@
+[
+  {
+    "_id": "1",
+    "owner": "1",
+    "name": "Ghent Canal Loft",
+    "type": "Apartment",
+    "description": "Experience loft living with a view of Ghent's historic canals. This stylish apartment offers modern amenities and is located in the heart of the city, close to restaurants, shops, and attractions.",
+    "location": {
+      "street": "12 Graslei",
+      "city": "Ghent",
+      "state": "East Flanders",
+      "zipcode": "9000"
+    },
+    "beds": 1,
+    "baths": 1,
+    "square_feet": 1000,
+    "amenities": [
+      "Wifi",
+      "Full kitchen",
+      "Washer & Dryer",
+      "Free Parking",
+      "City View",
+      "Elevator Access",
+      "Air Conditioning",
+      "Smart TV",
+      "Coffee Maker"
+    ],
+    "rates": {
+      "weekly": 900,
+
+      "nightly": "150"
+    },
+    "seller_info": {
+      "name": "Thomas De Vries",
+      "email": "thomas.devries@gmail.com",
+      "phone": "+32 9 555 55 55"
+    },
+    "images": ["ghent1.jpg", "ghent2.jpg", "ghent3.jpg"],
+    "isFeatured": true,
+    "createdAt": "2024-05-04T08:00:00.000Z",
+    "updatedAt": "2024-05-04T08:00:00.000Z"
+  },
+  {
+    "_id": "2",
+    "owner": "2",
+    "name": "Bruges Historic Cottage",
+    "type": "House",
+    "description": "Step back in time with this charming historic cottage in the heart of Bruges. Featuring exposed beams, a cozy fireplace, and a picturesque garden, this cottage offers a peaceful retreat.",
+    "location": {
+      "street": "5 Rozenhoedkaai",
+      "city": "Bruges",
+      "state": "West Flanders",
+      "zipcode": "8000"
+    },
+    "beds": 2,
+    "baths": 1,
+    "square_feet": 1200,
+    "amenities": [
+      "Wifi",
+      "Full kitchen",
+      "Washer & Dryer",
+      "Garden",
+      "Fireplace",
+      "Central Heating",
+      "Pet Friendly",
+      "Security System",
+      "Terrace",
+      "BBQ Grill",
+      "Coffee Maker"
+    ],
+    "rates": {
+      "weekly": 1100,
+      "monthly": 4000,
+      "nightly": "180"
+    },
+    "seller_info": {
+      "name": "Emma Janssens",
+      "email": "emma.janssens@example.com",
+      "phone": "+32 50 555 55 55"
+    },
+    "images": ["bruges1.jpg", "bruges2.jpg", "bruges3.jpg"],
+    "isFeatured": false,
+    "createdAt": "2024-05-04T08:00:00.000Z",
+    "updatedAt": "2024-05-04T08:00:00.000Z"
+  },
+  {
+    "_id": "3",
+    "owner": "3",
+    "name": "Antwerp City Center Penthouse",
+    "type": "Apartment",
+    "description": "Luxury penthouse living in the heart of Antwerp. Enjoy stunning city views from your private terrace, and explore the vibrant neighborhoods just steps away from your doorstep.",
+    "location": {
+      "street": "18 Meir",
+      "city": "Antwerp",
+      "state": "Antwerp",
+      "zipcode": "2000"
+    },
+    "beds": 3,
+    "baths": 2,
+    "square_feet": 1800,
+    "amenities": [
+      "Wifi",
+      "Full kitchen",
+      "Washer & Dryer",
+      "Free Parking",
+      "City View",
+      "Elevator Access",
+      "Air Conditioning",
+      "Terrace",
+      "Gym/Fitness Center",
+      "Sauna",
+      "Smart TV",
+      "Coffee Maker"
+    ],
+    "rates": {
+      "weekly": 1700,
+      "nightly": "200"
+    },
+    "seller_info": {
+      "name": "Jan Van den Berg",
+      "email": "jan.vandenberg@email.com",
+      "phone": "+32 3 555 55 55"
+    },
+    "images": ["antwerp1.jpg", "antwerp2.jpg", "antwerp3.jpg"],
+    "isFeatured": true,
+    "createdAt": "2024-05-04T08:00:00.000Z",
+    "updatedAt": "2024-05-04T08:00:00.000Z"
+  },
+  {
+    "_id": "4",
+    "owner": "4",
+    "name": "Liege Riverside Retreat",
+    "type": "House",
+    "description": "Escape to this peaceful riverside retreat in Liege. This spacious house offers panoramic views of the river, a private garden, and easy access to hiking and biking trails.",
+    "location": {
+      "street": "7 Quai de la Batte",
+      "city": "Liege",
+      "state": "Liege",
+      "zipcode": "4000"
+    },
+    "beds": 4,
+    "baths": 3,
+    "square_feet": 2500,
+    "amenities": [
+      "Wifi",
+      "Full kitchen",
+      "Washer & Dryer",
+      "Garden",
+      "River View",
+      "Fireplace",
+      "Central Heating",
+      "Pet Friendly",
+      "Security System",
+      "Terrace",
+      "BBQ Grill",
+      "Jacuzzi",
+      "Coffee Maker"
+    ],
+    "rates": {
+      "weekly": 1900,
+      "monthly": 7000,
+      "nightly": "250"
+    },
+    "seller_info": {
+      "name": "Sophie Lambert",
+      "email": "sophie.lambert@example.com",
+      "phone": "+32 4 555 55 55"
+    },
+    "images": ["liege1.jpeg", "liege2.jpg", "liege3.jpg"],
+    "isFeatured": false,
+    "createdAt": "2024-05-04T08:00:00.000Z",
+    "updatedAt": "2024-05-04T08:00:00.000Z"
+  },
+  {
+    "_id": "5",
+    "owner": "5",
+    "name": "Leuven Garden Oasis",
+    "type": "House",
+    "description": "Relax in this tranquil garden oasis in Leuven. This cozy house features a lush backyard garden, perfect for enjoying sunny days and outdoor meals with friends and family.",
+    "location": {
+      "street": "15 Naamsestraat",
+      "city": "Leuven",
+      "state": "Flemish Brabant",
+      "zipcode": "3000"
+    },
+    "beds": 2,
+    "baths": 1,
+    "square_feet": 1400,
+    "amenities": [
+      "Wifi",
+      "Full kitchen",
+      "Washer & Dryer",
+      "Garden",
+      "Central Heating",
+      "Pet Friendly",
+      "Terrace",
+      "BBQ Grill",
+      "Coffee Maker"
+    ],
+    "rates": {
+      "weekly": 1200,
+      "monthly": 4500,
+      "nightly": "200"
+    },
+    "seller_info": {
+      "name": "Peter Jacobs",
+      "email": "peter.jacobs@example.com",
+      "phone": "+32 16 555 55 55"
+    },
+    "images": ["leuven1.jpg", "leuven2.jpg", "leuven3.jpg"],
+    "isFeatured": true,
+    "createdAt": "2024-05-04T08:00:00.000Z",
+    "updatedAt": "2024-05-04T08:00:00.000Z"
+  },
+  {
+    "_id": "6",
+    "owner": "6",
+    "name": "Mechelen Riverside Apartment",
+    "type": "Apartment",
+    "description": "Enjoy waterfront living in this modern apartment in Mechelen. With panoramic views of the river, this apartment offers a serene retreat while being close to the city center.",
+    "location": {
+      "street": "10 Haverwerf",
+      "city": "Mechelen",
+      "state": "Antwerp",
+      "zipcode": "2800"
+    },
+    "beds": 2,
+    "baths": 1,
+    "square_feet": 1100,
+    "amenities": [
+      "Wifi",
+      "Full kitchen",
+      "Washer & Dryer",
+      "River View",
+      "Elevator Access",
+      "Air Conditioning",
+      "Terrace",
+      "Gym/Fitness Center",
+      "Sauna",
+      "Smart TV",
+      "Coffee Maker"
+    ],
+    "rates": {
+      "weekly": 1000,
+      "monthly": 3800,
+      "nightly": "175"
+    },
+    "seller_info": {
+      "name": "Martijn Vermeulen",
+      "email": "martijn.vermeulen@example.com",
+      "phone": "+32 15 555 55 55"
+    },
+    "images": [
+      "mechelen1.jpg",
+      "mechelen2.jpg",
+      "mechelen3.jpg",
+      "mechelen4.jpg"
+    ],
+    "isFeatured": false,
+    "createdAt": "2024-05-04T08:00:00.000Z",
+    "updatedAt": "2024-05-04T08:00:00.000Z"
+  },
+  {
+    "_id": "7",
+    "owner": "7",
+    "name": "Namur Hillside Villa",
+    "type": "House",
+    "description": "Experience luxury living in this hillside villa in Namur. With panoramic views of the city and surrounding countryside, this villa offers a peaceful retreat close to nature.",
+    "location": {
+      "street": "5 Citadelle",
+      "city": "Namur",
+      "state": "Namur",
+      "zipcode": "5000"
+    },
+    "beds": 5,
+    "baths": 4,
+    "square_feet": 3000,
+    "amenities": [
+      "Wifi",
+      "Full kitchen",
+      "Washer & Dryer",
+      "Garden",
+      "City View",
+      "Fireplace",
+      "Central Heating",
+      "Terrace",
+      "BBQ Grill",
+      "Jacuzzi",
+      "Sauna",
+      "Coffee Maker"
+    ],
+    "rates": {
+      "weekly": 2200,
+      "monthly": 8000
+    },
+    "seller_info": {
+      "name": "Isabelle Laurent",
+      "email": "isabelle.laurent@example.com",
+      "phone": "+32 81 555 55 55"
+    },
+    "images": ["namur1.jpg", "namur2.jpg", "namur3.jpg", "namur4.jpg"],
+    "isFeatured": true,
+    "createdAt": "2024-05-04T08:00:00.000Z",
+    "updatedAt": "2024-05-04T08:00:00.000Z"
+  },
+  {
+    "_id": "8",
+    "owner": "8",
+    "name": "Charleroi Urban Loft",
+    "type": "Apartment",
+    "description": "Live in style in this urban loft in Charleroi. With exposed brick walls, high ceilings, and modern furnishings, this loft offers a unique living experience in the heart of the city.",
+    "location": {
+      "street": "8 Place Charles II",
+      "city": "Charleroi",
+      "state": "Hainaut",
+      "zipcode": "6000"
+    },
+    "beds": 1,
+    "baths": 1,
+    "square_feet": 800,
+    "amenities": [
+      "Wifi",
+      "Full kitchen",
+      "Washer & Dryer",
+      "City View",
+      "Elevator Access",
+      "Air Conditioning",
+      "Smart TV",
+      "Coffee Maker"
+    ],
+    "rates": {
+      "weekly": 800,
+      "monthly": 3000
+    },
+    "seller_info": {
+      "name": "Philippe Dubois",
+      "email": "philippe.dubois@example.com",
+      "phone": "+32 71 555 55 55"
+    },
+    "images": ["charleroi1.jpg", "charleroi2.jpg", "charleroi3.jpg"],
+    "isFeatured": false,
+    "createdAt": "2024-05-04T08:00:00.000Z",
+    "updatedAt": "2024-05-04T08:00:00.000Z"
+  },
+  {
+    "_id": "9",
+    "owner": "9",
+    "name": "Kortrijk Riverside Retreat",
+    "type": "House",
+    "description": "Escape to nature in this riverside retreat in Kortrijk. Surrounded by lush greenery, this cozy house offers a peaceful getaway while still being close to the city center.",
+    "location": {
+      "street": "2 Broelkaai",
+      "city": "Kortrijk",
+      "state": "West Flanders",
+      "zipcode": "8500"
+    },
+    "beds": 3,
+    "baths": 2,
+    "square_feet": 1600,
+    "amenities": [
+      "Wifi",
+      "Full kitchen",
+      "Washer & Dryer",
+      "Garden",
+      "River View",
+      "Fireplace",
+      "Central Heating",
+      "Pet Friendly",
+      "Terrace",
+      "BBQ Grill",
+      "Coffee Maker"
+    ],
+    "rates": {
+      "weekly": 1300,
+      "monthly": 4800
+    },
+    "seller_info": {
+      "name": "Sophie Declercq",
+      "email": "sophie.declercq@example.com",
+      "phone": "+32 56 555 55 55"
+    },
+    "images": ["kortrijk1.jpg", "kortrijk2.jpg", "kortrijk3.jpg"],
+    "isFeatured": true,
+    "createdAt": "2024-05-04T08:00:00.000Z",
+    "updatedAt": "2024-05-04T08:00:00.000Z"
+  },
+  {
+    "_id": "10",
+    "owner": "10",
+    "name": "Ostend Beachfront Condo",
+    "type": "Condo",
+    "description": "Wake up to breathtaking views of the sea in this beachfront condo in Ostend. With direct access to the beach, this condo offers the ultimate seaside retreat.",
+    "location": {
+      "street": "5 Zeedijk",
+      "city": "Ostend",
+      "state": "West Flanders",
+      "zipcode": "8400"
+    },
+    "beds": 2,
+    "baths": 2,
+    "square_feet": 1200,
+    "amenities": [
+      "Wifi",
+      "Full kitchen",
+      "Washer & Dryer",
+      "Beachfront",
+      "Sea View",
+      "Elevator Access",
+      "Air Conditioning",
+      "Balcony",
+      "Gym/Fitness Center",
+      "Sauna",
+      "Smart TV",
+      "Coffee Maker"
+    ],
+    "rates": {
+      "weekly": 1600,
+      "monthly": 6000,
+      "nightly": "250"
+    },
+    "seller_info": {
+      "name": "Lucie Moreau",
+      "email": "lucie.moreau@example.com",
+      "phone": "+32 59 555 55 55"
+    },
+    "images": ["ostend1.jpg", "ostend2.jpg", "ostend3.jpg"],
+    "isFeatured": false,
+    "createdAt": "2024-05-04T08:00:00.000Z",
+    "updatedAt": "2024-05-04T08:00:00.000Z"
+  }
+]
