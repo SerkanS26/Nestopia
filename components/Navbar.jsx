@@ -71,7 +71,7 @@ const Navbar = () => {
                   href="/"
                   className={`${
                     pathname === "/" ? "bg-secondary" : ""
-                  } text-white  hover:bg-secondary hover:text-white rounded-md px-3 py-2`}
+                  } text-white  hover:bg-secondary hover:text-white rounded-md px-3 py-2 transition duration-300 ease-in `}
                 >
                   Home
                 </Link>
@@ -79,7 +79,7 @@ const Navbar = () => {
                   href="/properties"
                   className={`${
                     pathname === "/properties" ? "bg-secondary" : ""
-                  } text-white  hover:bg-secondary hover:text-white rounded-md px-3 py-2`}
+                  } text-white  hover:bg-secondary hover:text-white rounded-md px-3 py-2 transition duration-300 ease-in `}
                 >
                   Properties
                 </Link>
@@ -88,7 +88,7 @@ const Navbar = () => {
                     href="/properties/add"
                     className={`${
                       pathname === "/properties/add" ? "bg-secondary" : ""
-                    } text-white  hover:bg-secondary hover:text-white rounded-md px-3 py-2`}
+                    } text-white  hover:bg-secondary hover:text-white rounded-md px-3 py-2 transition duration-300 ease-in `}
                   >
                     Add Property
                   </Link>
@@ -101,7 +101,7 @@ const Navbar = () => {
           {!isLogedIn && (
             <div className="hidden md:block md:ml-6">
               <div className="flex items-center">
-                <button className="flex items-center text-white bg-gray-700 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2">
+                <button className="flex items-center text-white bg-gray-700 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 transition duration-300 ease-in ">
                   <FaGoogle className="text-white mr-2" />
                   <span>Login or Register</span>
                 </button>
@@ -208,12 +208,13 @@ const Navbar = () => {
 
       {isMobileMenuOpen && (
         <div className="" id="mobile-menu">
-          <div className="space-y-1 px-2 pb-3 pt-2">
+          <div className="space-y-1 px-2 pb-3 pt-2 ">
             <Link
               href="/"
               className={`${
                 pathname === "/" ? "bg-secondary" : ""
-              } text-white block rounded-md px-3 py-2 text-base font-medium`}
+              } text-white block  rounded-md px-3 py-2 text-base font-medium `}
+              onClick={() => setIsMobileMenuOpen((prev) => !prev)}
             >
               Home
             </Link>
@@ -221,7 +222,8 @@ const Navbar = () => {
               href="/properties"
               className={`${
                 pathname === "/properties" ? "bg-secondary" : ""
-              } text-white block rounded-md px-3 py-2 text-base font-medium`}
+              } text-white   block rounded-md px-3 py-2 text-base font-medium`}
+              onClick={() => setIsMobileMenuOpen((prev) => !prev)}
             >
               Properties
             </Link>
@@ -230,7 +232,8 @@ const Navbar = () => {
                 href="/properties/add"
                 className={`${
                   pathname === "/properties/add" ? "bg-secondary" : ""
-                } text-white block rounded-md px-3 py-2 text-base font-medium`}
+                } text-white   block rounded-md px-3 py-2 text-base font-medium`}
+                onClick={() => setIsMobileMenuOpen((prev) => !prev)}
               >
                 Add Property
               </Link>
