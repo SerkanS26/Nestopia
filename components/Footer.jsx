@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="mb-4 md:mb-0">
           <Image
             src={Nestopia}
-            alt="Logo"
+            alt="Nestopia logo"
             height={70}
             className="rounded-full "
           />
