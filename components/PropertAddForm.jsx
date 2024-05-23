@@ -5,7 +5,7 @@ import { useState } from "react";
 const PropertAddForm = () => {
   // Initialize the state with the default values
   const [fields, setFields] = useState({
-    type: "Apartment",
+    type: "",
     name: "",
     description: "",
     location: {
@@ -14,9 +14,9 @@ const PropertAddForm = () => {
       state: "",
       zipcode: "",
     },
-    beds: 1,
-    baths: 1,
-    square_feet: 1200,
+    beds: "",
+    baths: "",
+    square_feet: "",
     amenities: [],
     rates: {
       weekly: "",
@@ -119,7 +119,7 @@ const PropertAddForm = () => {
         </select>
       </div>
       <div className="mb-4">
-        <label className="block text-gray-700 font-bold mb-2">
+        <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
           Listing Name
         </label>
         <input
