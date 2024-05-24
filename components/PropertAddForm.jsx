@@ -33,6 +33,7 @@ const PropertAddForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
     // check if the field is nested
     if (name.includes(".")) {
       const [outerKey, innerKey] = name.split(".");
