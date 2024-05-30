@@ -11,7 +11,7 @@ export const getLatLngFromAddress = async (address) => {
       const location = data.features[0].center;
       const longitude = location[0];
       const latitude = location[1];
-      console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+
       return { lat: latitude, lng: longitude };
     } else {
       console.error("Geocoding failed: No results found");
