@@ -10,6 +10,7 @@ import profileDefault from "@/assets/images/profile.png";
 import Nestopia from "@/assets/images/Nestopia.png";
 
 import { FaGoogle } from "react-icons/fa";
+import UnreadMessageCount from "./UnreadMessageCount";
 
 const Navbar = () => {
   const { data: session } = useSession();
@@ -135,7 +136,7 @@ const Navbar = () => {
               <Link href="/messages" className="relative group">
                 <button
                   type="button"
-                  className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                  className="relative rounded-full mt-1 bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
                   <span className="absolute -inset-1.5"></span>
                   <span className="sr-only">View notifications</span>
@@ -154,9 +155,7 @@ const Navbar = () => {
                     />
                   </svg>
                 </button>
-                <span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">
-                  2{/* Replace with the actual number of notifications */}
-                </span>
+                <UnreadMessageCount session={session} />
               </Link>
               {/* Profile dropdown button */}
 
