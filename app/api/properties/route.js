@@ -8,9 +8,27 @@ export const GET = async (request) => {
   try {
     await connectDB();
 
-    const properties = await Property.find({});
+    // Get page from query params or default to 1
+    const page = request.nextUrl.searchParams.get("page") || 1;
 
-    return new Response(JSON.stringify(properties), {
+    // Get pageSize from query params or default to 5
+    const pageSize = request.nextUrl.searchParams.get("pageSize") || 5;
+
+    // Calculate the number of properties to skip
+    const skip = (page - 1) * pageSize;
+
+    // Get total number of properties
+    const total = await Property.countDocuments({});
+
+    // Get properties from the database based on page and pageSize
+    const properties = await Property.find({}).skip(skip).limit(pageSize);
+
+    const result = {
+      total,
+      properties,
+    };
+
+    return new Response(JSON.stringify(result), {
       status: 200,
     });
   } catch (error) {
