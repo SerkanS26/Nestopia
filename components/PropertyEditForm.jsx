@@ -9,6 +9,8 @@ const PropertEditForm = () => {
   const { id } = useParams();
   const router = useRouter();
 
+  const [mounted, setMounted] = useState(false);
+
   // Initialize the state with the default values
   const [fields, setFields] = useState({
     type: "",
@@ -39,6 +41,9 @@ const PropertEditForm = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    setMounted(true);
+
+    // Fetch the property data
     const fetchPropertyData = async () => {
       try {
         const propertyData = await fetchProperty(id);
@@ -136,6 +141,7 @@ const PropertEditForm = () => {
   };
 
   return (
+    mounted &&
     !loading && (
       <form onSubmit={handleSubmit}>
         <h2 className="text-3xl text-center font-semibold mb-6">
