@@ -7,12 +7,9 @@ export const GET = async (request) => {
     await connectDB();
 
     // Get featured properties
-    const properties = await Property.find(
-      {
-        is_featured: true,
-      },
-      { cache: "no-store" }
-    );
+    const properties = await Property.find({
+      is_featured: true,
+    });
 
     return new Response(JSON.stringify(properties), {
       status: 200,

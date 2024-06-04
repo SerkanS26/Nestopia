@@ -20,7 +20,8 @@ const SearchResultsPage = () => {
     const fetchSearchResults = async () => {
       try {
         const res = await fetch(
-          `/api/properties/search?location=${location}&propertyType=${propertyType}`
+          `/api/properties/search?location=${location}&propertyType=${propertyType}`,
+          { cache: "no-store" }
         );
 
         if (res.status == 200) {

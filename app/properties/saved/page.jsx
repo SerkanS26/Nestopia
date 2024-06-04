@@ -11,7 +11,7 @@ const SavedPropertiesPage = () => {
   useEffect(() => {
     const fetchSavedProperties = async () => {
       try {
-        const res = await fetch("/api/bookmarks");
+        const res = await fetch("/api/bookmarks", { cache: "no-store" });
 
         if (res.status === 200) {
           const data = await res.json();
