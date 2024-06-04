@@ -19,8 +19,7 @@ const Properties = () => {
       try {
         // Fetch properties from the API
         const res = await fetch(
-          `/api/properties?page=${page}&pageSize=${pageSize}`,
-          { cache: "no-cache" }
+          `/api/properties?page=${page}&pageSize=${pageSize}`
         );
         // Throw an error if the request fails
         if (!res.ok) {
