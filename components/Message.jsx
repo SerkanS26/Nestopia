@@ -12,9 +12,13 @@ const Message = ({ message }) => {
 
   const handleReadClick = async () => {
     try {
-      const res = await fetch(`/api/messages/${message._id}`, {
-        method: "PUT",
-      });
+      const res = await fetch(
+        `/api/messages/${message._id}`,
+        {
+          method: "PUT",
+        },
+        { cache: "no-cache" }
+      );
       if (res.status === 200) {
         const { read } = await res.json();
         setIsRead(read);
@@ -36,9 +40,13 @@ const Message = ({ message }) => {
 
   const handleDeleteClick = async () => {
     try {
-      const res = await fetch(`/api/messages/${message._id}`, {
-        method: "DELETE",
-      });
+      const res = await fetch(
+        `/api/messages/${message._id}`,
+        {
+          method: "DELETE",
+        },
+        { cache: "no-cache" }
+      );
 
       if (res.status === 200) {
         setIsDeleted(true);
