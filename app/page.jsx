@@ -8,7 +8,7 @@ import { Suspense } from "react";
 const HomePage = async () => {
   return (
     <>
-      <Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
         <Hero />
         <InfoBoxes />
         <FeaturedProperties />
