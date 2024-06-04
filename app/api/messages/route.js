@@ -3,7 +3,6 @@ import Message from "@/models/Message";
 import { getSessionUser } from "@/utils/getSessionUser";
 
 export const dynamic = "force-dynamic";
-export const fetchCache = "force-no-store";
 
 // GET /api/messages
 export const GET = async (request) => {
