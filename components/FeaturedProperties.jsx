@@ -3,12 +3,6 @@ import { motion } from "framer-motion";
 import { fetchProperties } from "@/utils/requests";
 import FeaturedPropertyCard from "@/components/FeaturedPropertyCard";
 
-//  const data = await fetchProperties();
-
-//  const recentProperties = data.properties
-//    .sort(() => Math.random() - Math.random())
-//    .slice(0, 3);
-
 const FeaturedProperties = async () => {
   const properties = await fetchProperties({ showFeatured: true });
 
