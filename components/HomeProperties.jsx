@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import PropertyCard from "@/components/PropertyCard";
 import Link from "next/link";
 import { fetchProperties } from "@/utils/requests";
@@ -6,8 +9,10 @@ const HomeProperties = async () => {
   const data = await fetchProperties();
 
   const recentProperties = data.properties
+
     .sort(() => Math.random() - Math.random())
     .slice(0, 3);
+
   return (
     <>
       <section className="px-4 py-6">
@@ -20,7 +25,14 @@ const HomeProperties = async () => {
               <p>No Properties Found</p>
             ) : (
               recentProperties.map((property) => (
-                <PropertyCard key={property._id} property={property} />
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2, duration: 1 }}
+                  key={property._id}
+                >
+                  <PropertyCard key={property._id} property={property} />
+                </motion.div>
               ))
             )}
           </div>

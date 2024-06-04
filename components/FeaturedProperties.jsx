@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import { motion } from "framer-motion";
 import { fetchProperties } from "@/utils/requests";
 import FeaturedPropertyCard from "@/components/FeaturedPropertyCard";
 
@@ -24,7 +25,14 @@ const FeaturedProperties = async () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {featuredProperties.map((property) => (
-              <FeaturedPropertyCard key={property.id} property={property} />
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2, duration: 1 }}
+                key={property._id}
+              >
+                <FeaturedPropertyCard key={property._id} property={property} />
+              </motion.div>
             ))}
           </div>
         </div>

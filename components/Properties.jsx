@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import PropertyCard from "@/components/PropertyCard";
 import Spinner from "@/components/Spinner";
 import Pagination from "@/components/Pagination";
+import { motion } from "framer-motion";
 
 const Properties = () => {
   const [properties, setProperties] = useState([]);
@@ -54,7 +55,14 @@ const Properties = () => {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {properties.map((property) => (
-              <PropertyCard key={property._id} property={property} />
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.2, duration: 1 }}
+                key={property._id}
+              >
+                <PropertyCard key={property._id} property={property} />
+              </motion.div>
             ))}
           </div>
         )}
