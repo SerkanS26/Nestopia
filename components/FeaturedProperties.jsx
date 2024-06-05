@@ -4,7 +4,7 @@ import FeaturedPropertyCard from "@/components/FeaturedPropertyCard";
 const FeaturedProperties = async () => {
   const properties = await fetchProperties({ showFeatured: true });
 
-  const featuredProperties = properties
+  const featuredProperties = await properties
     .sort(() => Math.random() - Math.random())
     .slice(0, 2);
 
