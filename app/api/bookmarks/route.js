@@ -7,7 +7,7 @@ import { getSessionUser } from "@/utils/getSessionUser";
 export const dynamic = "force-dynamic";
 
 //GET /api/bookmarks
-export const GET = async (request) => {
+export const GET = async () => {
   try {
     await connectDB();
 
