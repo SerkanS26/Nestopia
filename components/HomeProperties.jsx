@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import PropertyCard from "@/components/PropertyCard";
 import Link from "next/link";
 import { fetchProperties } from "@/utils/requests";
@@ -25,14 +22,7 @@ const HomeProperties = async () => {
               <p>No Properties Found</p>
             ) : (
               recentProperties.map((property) => (
-                <motion.div
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2, duration: 1 }}
-                  key={property._id}
-                >
-                  <PropertyCard key={property._id} property={property} />
-                </motion.div>
+                <PropertyCard key={property._id} property={property} />
               ))
             )}
           </div>

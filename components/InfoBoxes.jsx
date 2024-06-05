@@ -1,4 +1,5 @@
 "use client";
+
 import InfoBox from "./InfoBox";
 import { motion } from "framer-motion";
 
