@@ -7,6 +7,8 @@ export const dynamic = "force-dynamic";
 // GET /api/messages
 export const GET = async (request) => {
   try {
+    await connectDB();
+
     const sessionUser = await getSessionUser();
 
     if (!sessionUser || !sessionUser.user) {
